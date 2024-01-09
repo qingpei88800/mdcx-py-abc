@@ -1,6 +1,0 @@
-LICENSE
-setup.py
-MDCx_Main.egg-info/PKG-INFO
-MDCx_Main.egg-info/SOURCES.txt
-MDCx_Main.egg-info/dependency_links.txt
-MDCx_Main.egg-info/top_level.txt
