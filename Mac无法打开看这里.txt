@@ -1,0 +1,10 @@
+1，先把 MDCx.app 拖动到应用程序目录
+2，常见问题：
+    1）如果提示来源不明的开发者
+    请到「设置」-「安全性与因素」-「仍要打开」
+
+    2）如果提示「无法运行」，终端输入：
+    sudo xattr -rd com.apple.quarantine /Applications/MDCx.app
+
+    3）其他问题：「xxx.app 已损坏，无法打开，你应该将它移到废纸篓」、「打不开 xxx，因为它来自身份不明的开发者」
+    解决方法请参考： https://www.macwk.com/article/macos-file-damage

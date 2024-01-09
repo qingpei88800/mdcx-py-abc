@@ -1,0 +1,25 @@
+一、win版打包exe方法
+===============================
+1，官网下载安装 python（3.7.6版本支持win7）
+https://www.python.org/
+2，命令行运行：
+cd C:\MDCx-py-20210928
+3，命令行安装所需模块
+pip install -r requirements.txt
+4，命令行安装打包工具
+pip install pyinstaller
+5，命令行运行
+pyinstaller -n MDCx.exe -i Img/MDCx.ico -F -w --runtime-tmpdir "C:\" MDCx_Main.py --add-data "Data;." --add-data "Img;Img" --hidden-import socks --hidden-import urllib3 --hidden-import=_cffi_backend --collect-all curl_cffi
+
+pyinstaller MDCx.exe.spec
+
+打包好的程序在dist里面。
+
+二、Mac版打包app方法
+===============================
+1，官网下载安装 python （https://www.python.org/）
+2，命令行cd到MDCx所在目录
+3，命令行安装所需模块 pip install -r requirements.txt
+4，命令行安装打包工具 pip install py2app
+5，命令行运行 python setup.py py2app --packages=PIL
+6，打包好的程序在dist文件夹里面，MDCx.app 右键「显示包内容」，删除Contents/plugins文件夹即可(如果有这个的话)
