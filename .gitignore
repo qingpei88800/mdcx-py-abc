@@ -1,1 +1,6 @@
 /.eggs/
+/build/
+/dist/
+/Log/
+/config.ini
+/MDCx.config
